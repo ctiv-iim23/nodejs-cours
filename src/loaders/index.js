@@ -6,12 +6,4 @@ module.exports = async function (app) {
   expressLoader(app);
   ejsLoader(app);
   await mongooseLoader(app);
-
-  app.get("/", (req, res) => {
-    res.render("index");
-  });
-
-  app.get("/post", (req, res) => {
-    res.render("show");
-  });
 };

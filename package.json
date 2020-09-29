@@ -6,9 +6,11 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "gitignore": "^0.6.0",
     "mongoose": "^5.10.7"
   },
   "devDependencies": {
+    "faker": "^5.1.0",
     "nodemon": "^2.0.4"
   },
   "scripts": {
@@ -23,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/ctiv-iim23/nodejs-cours/issues"
   },
-  "homepage": "https://github.com/ctiv-iim23/nodejs-cours#readme"
+  "homepage": "https://github.com/ctiv-iim23/nodejs-cours#readme",
+  "mdSeed": {
+    "seedersFolder": "src/db/seed"
+  }
 }
