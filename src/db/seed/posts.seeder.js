@@ -15,13 +15,13 @@ for (let i = 0; i < 10; i++) {
 
 class PostsSeeder extends Seeder {
   async shouldRun() {
-    return Model.countDocuments()
+    return Post.countDocuments()
       .exec()
       .then((count) => count === 0);
   }
 
   async run() {
-    return Model.create(data);
+    return Post.create(data);
   }
 }
 
