@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const PostSeeder = require("./src/db/seed/posts.seeder");
 
-const mongoURL = "mongodb://localhost/dbname";
+const mongoURL = "mongodb://localhost/cours-nodejs";
 
 /**
  * Seeders List

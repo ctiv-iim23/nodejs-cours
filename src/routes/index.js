@@ -4,12 +4,16 @@ const Post = require("../db/models/postModel");
 module.exports = function () {
   const app = Router();
 
-  app.get("/", (req, res) => {
-    res.render("index");
-  });
+  app.get("/", async function (req, res) {
+    const posts = await Post.find();
 
-  app.get("/post", (req, res) => {
+    res.render("index", {
+      posts,
+    });
+  });
+  app.get("/post", function (req, res) {
     res.render("show");
   });
+
   return app;
 };
