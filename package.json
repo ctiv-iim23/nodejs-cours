@@ -8,6 +8,7 @@
     "ejs-locals": "^1.0.2",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
+    "joy": "^0.1.1",
     "mongoose": "^5.10.7"
   },
   "devDependencies": {

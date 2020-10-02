@@ -9,6 +9,9 @@
       <div class="card-details">
         <h2><%= post.title %></h2>
         <p class="text-secondary"><%= post.description %></p>
+        <small>
+          Crée le <%= new Intl.DateTimeFormat('en-GB').format(post.createdAt) %>
+        </small>
       </div>
     </div>
   </a>
